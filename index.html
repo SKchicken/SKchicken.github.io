@@ -29,6 +29,8 @@
             text-align: center;
             padding: 0em;
             position: fixed;
+            left: 0;
+            right: 0;
             bottom: 0;
             width: 100%;
         }
@@ -47,9 +49,32 @@
     </style>
 </head>
 <body>
+    
+<!-- Popup container with close button -->
+<div class="popup-container" id="popup">
+    <span class="close-btn" onclick="closePopup()">X</span>
+    <img src="src\img-003.png" alt="" style="height: 100%; width: 100%;">
+</div>
+
+<!-- JavaScript to show the popup after a delay -->
+<script>
+    // Function to show the popup
+    function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
+
+    // Show the popup after a delay (e.g., 5 seconds)
+    setTimeout(showPopup, 2000);
+</script>
     <header>
         <img src="src\img-002.png" alt="" style="height: 100%; width: 100%;">
     </header>
+
     <section>
         <h2>Gallery</h2>
         <div class="gallery-container">
@@ -63,32 +88,31 @@
                 <figcaption>Caption here</figcaption>
             </figure> -->
         </div>
-    </section>
-    
-    <section>
-        
         <h2>Menu</h2>
         <ul>
-            <li>Fried Chicken</li>
-            <li>Grilled Chicken</li>
-            <li>Chicken Wings</li>
-            <li>Chicken Sandwich</li>
+            <li>Broiler Chicken</li>
+            <li>Country Chicken</li>
+            <li>Quail chicken</li>
+            <li>Eggs</li>
+            <li>Quail eggs</li>
         </ul>
     </section>
+      
 
     <section>
         <h2>Location</h2>
         <address>
-            <li>SK Chicken<br>
-            No.1,<br>
+            SK Chicken<br>
+            No.1,
             Thiruneermalai Main Road,<br>
             Kamarajapuram,<br>
-            Chennai - 600070</li>
+            Chennai - 600070
         </address>
         <br>
         <!-- You can also embed a map using an iframe -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5498.428226956797!2d80.12098912570993!3d12.973394163713357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fc2e9d6ea8b%3A0x593f59f96ed0009a!2sSt.%20Antony&#39;s%20Church!5e0!3m2!1sen!2sin!4v1702389618848!5m2!1sen!2sin" width="100%" height="30%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
+    <section>
 
     
 
@@ -104,3 +128,58 @@
     </footer>
 </body>
 </html>
+
+
+
+    <style>
+        /* Styles for the popup container */
+        .popup-container {
+            height: 65%;
+            width: 80%;
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        /* Styles for the close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+
+
+<style>
+    /* Styles for the fixed WhatsApp button */
+    .whatsapp-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25D366;
+        color: #fff;
+        padding: 10px;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<!-- Fixed WhatsApp button -->
+<div class="whatsapp-button">
+<a href="https://api.whatsapp.com/send?phone=7200822622" target="_blank" style="text-decoration: none; color: #fff;">
+    <span style="font-size: 20px;">📱</span>
+</a>
+</div>
