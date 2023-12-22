@@ -1,413 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SK Chicken</title>
+    <!-- {meta data} -->
+    <meta name="title" content="SK Chicken" />
+    <meta name="description" content="Welcome to SK Chicken, Chicken shop in Chennai. We offer a variety of poultry products including Broiler, Chicken, Country Chicken, Quail Chicken, Eggs, and Quail Eggs. Visit us at No.1, Thiruneermalai Main Road, Kamarajapuram, Chennai - 600070. Contact us at 7200822622. Explore freshness and quality at SK Chicken!" />
+    <meta name="keywords" content="SK Chicken, SK Chicken, chicken shop, poultry products, Broiler, Chicken, Country Chicken, Quail Chicken, Eggs, Quail Eggs, fresh poultry, Chennai, Thiruneermalai Main Road, Kamarajapuram, opening soon, December 24, 2023, contact, location, WhatsApp, quality chicken, poultry shop, SK, Samuvel Kishore, Published By Samsun Kiran..." />
+    <meta name="author" content="Samuvel Kishore" />
+    <meta name="owner" content="Samuvel Kishore" />
+    <meta name="copyright" content="SK Chicken" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="src/LOGO - 200 X 200.png" type="image/png" sizes="200x200" alt="SK Chicken" />
+    <link rel="license" href="LICENSE" />
+    <!-- {Open Graph data} -->
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:author" content="Samuvel Kishore" />
+    <meta property="og:site_name" content="SK Chicken" />
+    <meta property="og:url" content="https://skchicken.a2zet.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="SK Chicken" />
+    <meta property="og:image" content="src/LOGO - 200 X 200.png" />
+    <meta property="og:description" content="Welcome to SK Chicken, Chicken shop in Chennai. We offer a variety of poultry products including Broiler, Chicken, Country Chicken, Quail Chicken, Eggs, and Quail Eggs. Visit us at No.1, Thiruneermalai Main Road, Kamarajapuram, Chennai - 600070. Contact us at 7200822622. Explore freshness and quality at SK Chicken!" />
+    <!-- {Twitter Card data} -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="SK Chicken" />
+    <meta name="twitter:title" content="SK Chicken" />
+    <meta name="twitter:description" content="Welcome to SK Chicken, Chicken shop in Chennai. We offer a variety of poultry products including Broiler, Chicken, Country Chicken, Quail Chicken, Eggs, and Quail Eggs. Visit us at No.1, Thiruneermalai Main Road, Kamarajapuram, Chennai - 600070. Contact us at 7200822622. Explore freshness and quality at SK Chicken!" />
+    <meta name="twitter:image" content="src/LOGO - 200 X 200.png" />
+    <meta name="twitter:locale" content="en_IN" />
+    <meta name="twitter:author" content="Samuvel Kishore" />
+    <meta name="twitter:type" content="website" />
+    <meta name="twitter:url" content="https://skchicken.a2zet.com" />
+    <!-- {main data} -->
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <!-- {web app} -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="icon" href="src/LOGO - 100 X 100.png" type="image/png" sizes="100×100" alt="SK Chicken" />
+    <link rel="preconnect" href="https://skchicken.a2zet.com">
+    <base href="/">
+    <!-- {Google Analyzer} -->
+    <script src="https://samsonkiran02.github.io/p/script/js/id=001/v-1.0/google_analyzer.js"></script>
+    <script src="https://samsonkiran02.github.io/p/script/js/id=001/v-2.0/google_analyzer.js"></script>
+    <!-- {CSS linked Files} -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400&display=swap');
-      </style>
-    <style>
-        * {
-            font-family: 'Playpen Sans', cursive;
-        }
-        body {
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f8f8;
-            overflow-x: hidden;
-        }
-
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 0;
-        }
-
-        section {
-            margin: 2em;
-        }
-
-        footer {
-            background-color: #333;
-            font-family: Arial, sans-serif;
-            color: #fff;
-            text-align: center;
-            padding: 0em;
-            position: fixed;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 100%;
-        }
-
-        p, ul, address {font-family: 'Playpen Sans', cursive; color: dimgrey;
-    }
-        /*
-        .gallery-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-
-        .gallery-container img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        */
+      @import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100;200;300;400&display=swap');
     </style>
-</head>
+    <style>
+      * {
+        font-family: "Playpen Sans", cursive;
+        box-sizing: border-box;
+      }
 
-<body>
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f8f8;
+        overflow-x: hidden;
+      }
 
-    <!-- Popup container with close button -->
-    <div class="popup-container" id="popup">
-        <span class="close-btn" onclick="closePopup()">X</span>
-        <img src="src\img-003.webp" alt="" style="height: 100%; width: 100%;">
-    </div>
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0;
+      }
 
-    <!-- JavaScript to show the popup after a delay -->
-    <script>
-        // Function to show the popup
-        function showPopup() {
-            document.getElementById('popup').style.display = 'block';
-        }
+      section {
+        margin: 2em;
+      }
 
-        // Function to close the popup
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
+      a {
+        text-decoration: none;
+      }
 
-        // Show the popup after a delay (e.g., 5 seconds)
-        setTimeout(showPopup, 2000);
-    </script>
-    <header>
-        <img src="src\img-002.png" alt="" style="height: 100%; width: 100%;">
-    </header>
-    <!-- Taskbar -->
-    <div class="taskbar" style="overflow-x: hidden;">
-        <a href="#menu">Menu</a>
-        <!-- <a href="#gallery">Gallery</a> -->
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
-    </div>
+      p,
+      ul,
+      address {
+        font-family: "Playpen Sans", cursive;
+        color: dimgrey;
+      }
 
-    <section>
-        <h2 id="gallery">Gallery</h2>
-        <div class="gallery-container">
-            <img src="src\img-001.png" alt="" loading="lazy">
-            <img src="src\img-003.webp" alt="" loading="lazy">
-            <!-- Add more images as needed -->
-
-            <!-- Example with captions -->
-            <!-- <figure>
-                <img src="image.jpg" alt="Description">
-                <figcaption>Caption here</figcaption>
-            </figure> -->
-        </div>
-        <h2 id="menu">Menu</h2>
-        <ul>
-            <li>Broiler Chicken</li>
-            <li>Country Chicken</li>
-            <li>Quail chicken</li>
-            <li>Eggs</li>
-            <li>Quail eggs</li>
-        </ul>
-    </section>
-
-
-    <section>
-        <h2 id="location">Location</h2>
-        <section>
-        <address style="margin-top: -15px;">
-            <b style="font-weight: 800;">SK Chicken</b><br>
-            No.1,
-            Thiruneermalai Main Road,<br>
-            Kamarajapuram,<br>
-            Chennai - 600070
-        </address>
-    </section>
-        <br>
-        <!-- You can also embed a map using an iframe -->
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.015873207208!2d80.1218896!3d12.970836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb411c2a689%3A0x3aa80e5d83768fb7!2sSK%20Chicken!5e0!3m2!1sen!2sin!4v1703176196059!5m2!1sen!2sin"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
-
-
-
-
-        <section>
-            <h2>About Us</h2>
-            <section>
-            <p>Welcome to <b style="font-weight: 800;">SK Chicken</b>, where passion meets poultry perfection. At SK Chicken, we take pride in delivering
-                the finest and most flavorful chicken dishes to satisfy your cravings.</p>
-            <p>Our chefs are dedicated to crafting each meal with care, using the freshest ingredients and secret family
-                recipes. Whether you prefer crispy fried chicken, succulent grilled options, or mouthwatering chicken
-                wings, SK Chicken has something to delight every palate.</p>
-            <p>Join us on a culinary journey where taste and quality converge. Experience the excellence that sets SK
-                Chicken apart – because when it comes to chicken, we're simply the best.</p>
-                </section>
-        </section>
-        <section>
-            <h2 id="contact">Contact Us</h2>
-            <section>
-            <p>Have questions or want to place an order? Contact us!</p>
-            <p><a href="tel:+91-7200822622"><b>7200-822-622</b></a></p>
-            </section>
-        </section>
-        <br><br><br><br><br><br>
-        <footer>
-            <h5 style="font-family: Arial, sans-serif;">&copy; 2023 SK Chicken. All rights reserved.</h5>
-        </footer>
-</body>
-
-</html>
-
-
-<!--
-<style>
-    /* Styles for the popup container */
-    .popup-container {
-        height: 65%;
-        width: 80%;
+      /* Common styles for the popup container */
+      .popup-container {
         display: none;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 20px;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-        z-index: 1000;
-    }
-
-    /* Styles for the close button */
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-</style>
--->
-
-<style>
-    /* Common styles for the popup container */
-    .popup-container {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        background-color: #fff;
-        border: 1.5px solid #ccc;
+        padding: 8.5px;
+        background-color: #ccc;
+        border: 3px solid #000;
+        border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         z-index: 1000;
         overflow: hidden;
-
-
-    }
-
-    /* Styles for larger screens */
-    @media screen and (min-width: 768px) {
-        .popup-container {
-            height: 70%;
-            width: 60%;
-        }
-    }
-
-    /* Styles for medium-sized screens */
-    @media screen and (max-width: 767px) {
-        .popup-container {
-            height: 80%;
-            width: 80%;
-        }
-    }
-
-    /* Styles for small screens */
-    @media screen and (max-width: 480px) {
-        .popup-container {
-            height: 80%;
-            width: 80%;
-        }
-    }
-
-    /* Styles for the close button */
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-</style>
-
-
-
-
-
-    <!DOCTYPE html>
-    <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Website</title>
-        <style>
-            body {
-                margin: 0;
-                font-family: Arial, sans-serif;
-            }
-
-            /* Taskbar styles */
-            .taskbar {
-                background-color: #333;
-                padding: 10px;
-                width: 100%;
-                top: 0;
-                z-index: 1000;
-                overflow: hidden;
-            }
-
-            /* Navigation links */
-            .taskbar a {
-                color: white;
-                padding: 10px;
-                text-decoration: none;
-                margin: 0 10px;
-                font-size: 18px;
-            }
-
-            .taskbar a:hover {
-                border-bottom: 2px solid #fff;
-            }
-        </style>
-    </head>
-
-    <body>
-
-
-
-
-
-        <style>
-            .gallery-container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                justify-content: space-around; /* Adjust alignment as needed */
-            }
-        
-            .gallery-container img {
-                width: 100%;
-                max-width: 300px; /* Set a maximum width for larger screens */
-                height: auto;
-                border-radius: 8px;
-            }
-        
-            @media screen and (min-width: 768px) {
-                /* Adjust styles for medium-sized screens */
-                .gallery-container img {
-                    max-width: 400px;
-                }
-            }
-        
-            @media screen and (min-width: 1024px) {
-                /* Adjust styles for larger screens */
-                .gallery-container img {
-                    max-width: 600px;
-                }
-            }
-        </style>
-
-
-
-
-
-
-  
-  
-<style>
-    a{
-      text-decoration:none;
-    }
-    .floating_btn {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      width: 100px;
-      height: 100px;
-      display: flex;
-      flex-direction: column;
-      align-items:center;
-      justify-content:center;
-      z-index: 1000;
-    }
-    
-    @keyframes pulsing {
-      to {
-        box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);
+        height: auto;
+        width: auto;
       }
-    }
-    
-    .contact_icon {
-      background-color: #42db87;
-      color: #fff;
-      width: 50px;
-      height: 50px;
-      font-size:25px;
-      border-radius: 100px;
-      text-align: center;
-      box-shadow: 1px 1px 2px #999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transform: translatey(0px);
-      animation: pulse 1.5s infinite;
-      box-shadow: 0 0 0 0 #42db87;
-      -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-      -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-      -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-      animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
-      font-weight: normal;
-      font-family: sans-serif;
-      text-decoration: none !important;
-      transition: all 300ms ease-in-out;
-    }
-    
-    
-    .text_icon {
-      margin-top: 8px;
-      color: #707070;
-      font-size: 13px;
-    }
+
+      /* Styles for larger screens */
+      @media screen and (min-width: 768px) {
+        .popup-container {
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      /* Styles for medium-sized screens */
+      @media screen and (max-width: 767px) {
+        .popup-container {
+          height: auto;
+          width: auto;
+        }
+      }
+
+      /* Styles for small screens */
+      @media screen and (max-width: 480px) {
+        .popup-container {
+          height: auto;
+          width: 90%;
+        }
+      }
+
+      /* Styles for the close button */
+      .close-btn {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        height: 33px;
+        width: 33px;
+        font-size: 20px;
+        cursor: pointer;
+        color: #000;
+        background-color: #ccc;
+        padding: 5px 10px 1px 5px;
+        margin: 0;
+        margin-top: -10px;
+        border-radius: 100%;
+      }
+
+      /* Taskbar styles */
+      .taskbar {
+        background-color: #333;
+        padding: 10px;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        overflow: hidden;
+      }
+
+      /* Navigation links */
+      .taskbar a {
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 18px;
+      }
+
+      .taskbar a:hover {
+        border-bottom: 2px solid #fff;
+      }
+
+      .mySlides {
+        display: none;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        margin-bottom: -20px;
+      }
+
+      /* Caption text */
+      .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+
+        to {
+          opacity: 1;
+        }
+      }
+
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .text {
+          font-size: 11px;
+        }
+      }
+
+      .order-container {
+        display: inline-block;
+        border: #ccc solid 3px;
+        border-radius: 10px;
+        padding: 10px;
+        max-width: 500px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .order-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .order-button {
+        display: block;
+        max-width: 500px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-top: -1px;
+      }
+
+      .order-button:hover {
+        background-color: #ccc;
+        color: #000;
+        border: #000 solid 3px;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        /* Adjust alignment as needed */
+      }
+
+      .gallery-container img {
+        width: 100%;
+        max-width: 300px;
+        /* Set a maximum width for larger screens */
+        height: auto;
+        border-radius: 8px;
+      }
+
+      @media screen and (min-width: 768px) {
+
+        /* Adjust styles for medium-sized screens */
+        .gallery-container img {
+          max-width: 400px;
+        }
+      }
+
+      @media screen and (min-width: 1024px) {
+
+        /* Adjust styles for larger screens */
+        .gallery-container img {
+          max-width: 600px;
+        }
+      }
+
+      .floating_btn {
+        position: fixed;
+        bottom: 2px;
+        right: 2px;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+      }
+
+      @keyframes pulsing {
+        to {
+          box-shadow: 0 0 0 20px rgba(232, 76, 61, 0);
+        }
+      }
+
+      .contact_icon {
+        background-color: #42db87;
+        color: #fff;
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 100px;
+        text-align: center;
+        box-shadow: 1px 1px 2px #999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translatey(0px);
+        animation: pulse 1.5s infinite;
+        box-shadow: 0 0 0 0 #42db87;
+        -webkit-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        -moz-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        -ms-animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        animation: pulsing 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+        font-weight: normal;
+        font-family: sans-serif;
+        text-decoration: none !important;
+        transition: all 300ms ease-in-out;
+      }
+
+      .text_icon {
+        margin-top: 8px;
+        color: #707070;
+        font-size: 13px;
+      }
+
+      footer {
+        background-color: #333;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        text-align: center;
+        padding: 0em;
+        position: absolute;
+        width: 100%;
+      }
     </style>
-    
-      
-      
-      
-    </head>
-    
-    <body>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <div class="floating_btn">
-        <a target="_blank" href="https://wa.me/+917200822622?text=Hi">
-          <div class="contact_icon">
-            <i class="fa fa-whatsapp my-float"></i>
-          </div>
-        </a>
-        <p class="text_icon">Talk to us?</p>
+  </head>
+  <body>
+    <header>
+      <img src="src/img-002.webp" alt="" style="height: 100%; width: 100%;">
+    </header>
+    <!-- Popup container with close button -->
+    <div class="popup-container" id="popup">
+      <span class="close-btn bi-x-circle" onclick="closePopup()"></span>
+      <img src="src/img-003.webp" alt="" width="100%" height="100%">
+    </div>
+    <!-- Taskbar -->
+    <div class="taskbar" style="overflow-x: hidden; text-align:center">
+      <a href="#menu">Menu</a>
+      <!-- <a href="#gallery">Gallery</a> -->
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="slideshow-container">
+      <!--
+        <div class="mySlides fade"><img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%"><div class="numbertext">1 / 3</div><div class="text">Caption Text</div></div>
+        -->
+      <div class="mySlides fade">
+        <img src="src/slideshow/ssi-001.webp" style="width:100%">
       </div>
-      
-      
-      
-    </body>
-    
-    </html>
+      <div class="mySlides fade">
+        <img src="src/slideshow/ssi-002.webp" style="width:100%" loading="lazy">
+      </div>
+      <div class="mySlides fade">
+        <img src="src/slideshow/ssi-003.webp" style="width:100%" loading="lazy">
+      </div>
+    </div>
+    <!-- Hiden Order Contents
+    <section>
+      <center>
+        <div class="order-container">
+          <img class="order-image" src="src/slideshow/ssi-001.webp" alt="Product Image" loading="lazy">
+          <a class="order-button" href="https://wa.me/+917200822622?text=Name%3A%20%0AAddress%3A%20">Order Now</a>
+        </div>
+        <div class="order-container">
+          <img class="order-image" src="src/slideshow/ssi-002.webp" alt="Product Image" loading="lazy">
+          <a class="order-button" href="https://wa.me/+917200822622?text=Name%3A%20%0AAddress%3A%20">Order Now</a>
+        </div>
+        <div class="order-container">
+          <img class="order-image" src="src/slideshow/ssi-003.webp" alt="Product Image" loading="lazy">
+          <a class="order-button" href="https://wa.me/+917200822622?text=Name%3A%20%0AAddress%3A%20">Order Now</a>
+        </div>
+      </center>
+    </section>   -->
+    <section>
+      <h2 id="gallery">Gallery</h2>
+      <div class="gallery-container">
+        <img src="src/img-001.webp" alt="" loading="lazy">
+        <img src="src/img-003.webp" alt="" loading="lazy">
+        <!-- Add more images as needed -->
+        <!-- Example with captions -->
+        <!-- <figure><img src="image.jpg" alt="Description"><figcaption>Caption here</figcaption></figure> -->
+      </div>
+    </section>
+    <section>
+      <h2 id="menu">Menu</h2>
+      <ul>
+        <li>Broiler Chicken</li>
+        <li>Country Chicken</li>
+        <li>Quail chicken</li>
+        <li>Eggs</li>
+        <li>Quail eggs</li>
+      </ul>
+    </section>
+    <section>
+      <h2>About Us</h2>
+      <section>
+        <p>Welcome to <b style="font-weight: 800;">SK Chicken</b> – your trusted chicken shop in Chennai. At <b style="font-weight: 600;">SK Chicken</b>, we take pride in providing you with high-quality poultry products. With a commitment to freshness and customer satisfaction, we offer a range of options, including Broiler, Chicken, Country Chicken, Quail Chicken, Eggs, and Quail Eggs. </p>
+        <p>Visit us at our convenient location on No.1, Thiruneermalai Main Road, Kamarajapuram, Chennai - 600070. We're excited to open our doors on December 24, 2023. For inquiries, you can reach us at 7200822622.</p>
+        <p>Thank you for choosing <b style="font-weight: 600;">SK Chicken</b>. Discover the taste of quality poultry with us.</p>
+      </section>
+    </section>
+    <section>
+      <h2 id="location">Location</h2>
+      <section>
+        <address style="margin-top: -15px;">
+          <b style="font-weight: 800;">SK Chicken</b>
+          <br> No.1, Thiruneermalai Main Road, <br> Kamarajapuram, <br> Chennai - 600070
+        </address>
+      </section>
+      <!-- You can also embed a map using an iframe -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.015873207208!2d80.1218896!3d12.970836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb411c2a689%3A0x3aa80e5d83768fb7!2sSK%20Chicken!5e0!3m2!1sen!2sin!4v1703176196059!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <section>
+      <h2 id="contact">Contact Us</h2>
+      <section>
+        <p>Have questions or want to place an order? Contact us!</p>
+        <p>
+          <a href="tel:+91-7200822622" style="color: #333;">
+            <b>
+              <i class="bi bi-telephone"></i> 7200-822-622 </b>
+          </a>
+        </p>
+        <p>
+          <a href="https://wa.me/+917200822622?text=Hi" style="color: #333;">
+            <b>
+              <i class="bi bi-whatsapp"></i> 7200-822-622 </b>
+          </a>
+        </p>
+      </section>
+    </section>
+    <br>
+    <div class="floating_btn">
+      <a target="_blank" href="https://wa.me/+917200822622?text=Hi">
+        <div class="contact_icon">
+          <i class="bi bi-whatsapp"></i>
+        </div>
+      </a>
+      <p class="text_icon">Talk to us?</p>
+    </div>
+    <footer>
+      <h5 style="font-family: Arial, sans-serif;">&copy; 2023 SK Chicken. All rights reserved.</h5>
+    </footer>
+    <!-- JavaScript -->
+    <script>
+      // JavaScript to show the popup after a delay
+      // Function to show the popup
+      function showPopup() {
+        document.getElementById('popup').style.display = 'block';
+      }
+      // Function to close the popup
+      function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+      }
+      // Show the popup after a delay (e.g., 5 seconds)
+      setTimeout(showPopup, 2000);
+      // javascript
+      // JavaScript to show the Slides
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+  </body>
+</html>
